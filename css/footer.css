@@ -620,10 +620,11 @@ a {
 .footer_5 .footer_block_list.address li i {
     position: absolute;
     left: 0;
+    top: 4px;
 }
 
 .footer_5 .blog_post_list .blog_post_list_item {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     column-gap: 15px;
 }
