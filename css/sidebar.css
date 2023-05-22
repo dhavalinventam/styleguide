@@ -1,0 +1,302 @@
+.left-side-section-div {
+    position: relative;
+    width: 300px;
+    transition: 350ms !important;
+}
+
+.panel-sidebar-div {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    z-index: 99;
+    background-color: var(--whitecolor);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+    padding-bottom: 20px;
+}
+
+.logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px 0 20px;
+}
+
+.logo-div a {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    color: var(--primarycolor);
+    font-family: var(--heading-font-family);
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.logo-img img {
+    max-width: 140px;
+}
+
+.logo-text span {
+    color: var(--graycolor);
+}
+
+.logo-img {
+    display: flex;
+    align-items: center;
+}
+
+.bar-icon span {
+    color: var(--graycolor);
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.logo-div .bar-icon {
+    margin-left: 10px;
+}
+
+.togglebar {
+    color: var(--primarycolor);
+}
+
+.sidemenu-div {
+    margin-top: 20px;
+}
+
+.sidemenu-div a {
+    text-decoration: none;
+}
+
+.bgactive {
+    background-color: var(--whitecolor);
+    box-shadow: 0px 0px 25px rgba(177, 67, 67, 0.1);
+}
+
+.bgactive label span {
+    color: var(--primarycolor) !important;
+}
+
+.bgactive p {
+    color: var(--primarycolor) !important;
+    font-weight: 500 !important;
+}
+
+.menu-box-div {
+    display: flex;
+    border-radius: var(--border-radius-5);
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+}
+
+.menu-box-div label {
+    width: 24px;
+    margin-bottom: 0px;
+    margin-right: 15px;
+    line-height: 15px;
+}
+
+.menu-box-div label span {
+    color: var(--graycolor);
+    font-size: 24px;
+}
+
+.menu-box-div p {
+    color: var(--graycolor);
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.togglebar {
+    display: none !important;
+}
+
+.sidebar-user-details-div {
+    text-align: center;
+}
+
+.user-img-div img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px rgb(177 67 67 / 24%);
+}
+
+.user-name-text {
+    color: var(--primarycolor);
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.user-desc-text {
+    color: var(--graycolor);
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.sidebar_heading {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* === SCROLLBAR CSS START === */
+.sidemenu-div {
+    height: calc(100vh - 320px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 20px 20px 0px 20px;
+}
+
+.sidemenu-div a:last-child .menu-box-div {
+    margin-bottom: 0px;
+}
+
+.sidemenu-div::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidemenu-div::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--Secondarycolor);
+    border-radius: var(--border-radius-5);
+}
+
+.sidemenu-div::-webkit-scrollbar-thumb {
+    background: var(--graycolor);
+    border-radius: var(--border-radius-5);
+}
+
+/* === SCROLLBAR CSS END === */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .left-side-section-div {
+        display: none;
+        width: auto;
+    }
+
+    .left-side-section-div {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.28);
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+    }
+
+    .panel-sidebar-div {
+        padding: 0px 0px;
+        border-right: 0px;
+    }
+
+    .panel-sidebar-div {
+        width: 280px;
+    }
+
+    .menu-box-div p {
+        font-size: 14px;
+    }
+
+    .menu-box-div label {
+        width: 20px;
+        margin-bottom: 0px;
+        margin-right: 10px;
+        font-size: 17px;
+    }
+
+    .togglebar {
+        display: block !important;
+    }
+
+    .menu-box-div p {
+        font-size: 14px;
+    }
+
+    .menu-box-div label {
+        width: 20px;
+        margin-bottom: 0px;
+        margin-right: 10px;
+        font-size: 17px;
+    }
+
+    .menu-box-div {
+        margin-bottom: 10px;
+    }
+
+    .sidemenu-div {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .left-side-section-div {
+        position: relative;
+        width: auto;
+        display: none;
+    }
+
+    .left-side-section-div {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.28);
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+    }
+
+    .panel-sidebar-div {
+        width: 300px;
+    }
+
+    .bar-icon {
+        display: none !important;
+    }
+
+    .togglebar {
+        display: block !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .left-side-section-div {
+        width: 240px;
+    }
+
+    .menu-box-div p {
+        font-size: 14px;
+    }
+
+    .menu-box-div label {
+        width: 24px;
+        margin-bottom: 0px;
+        margin-right: 10px;
+        font-size: 17px;
+    }
+
+    .panel-sidebar-div {
+        width: 240px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .left-side-section-div {
+        width: 240px;
+    }
+
+    .menu-box-div p {
+        font-size: 14px;
+    }
+
+    .menu-box-div label {
+        width: 24px;
+        margin-bottom: 0px;
+        margin-right: 10px;
+        font-size: 17px;
+    }
+
+    .panel-sidebar-div {
+        width: 240px;
+    }
+}
