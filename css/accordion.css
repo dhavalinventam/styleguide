@@ -1,0 +1,298 @@
+/* ##########################  Accordian1 css start ####################### */
+
+.accordion1 .accordion {
+    margin: 20px auto 0;
+}
+.accordion1 details > summary {
+    list-style: none;
+}
+.accordion1 details summary::-webkit-details-marker {
+    display: none;
+}
+.accordion1 details {
+    margin-bottom: 20px;
+}
+.accordion1 summary {
+    color: #222222;
+    padding: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 1rem;
+    cursor: pointer;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.accordion1 .icon svg {
+    -webkit-transition: all 0.35s ease-out;
+    -o-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out;
+}
+.accordion1 .icon svg path {
+    stroke: #222222;
+}
+.accordion1 details > div {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.accordion1 details[open] .icon svg {
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+/* ##########################  Accordian1 css end ####################### */
+
+
+/* ##########################  Accordian2 css start ####################### */
+
+.accordion2 .mainMenu{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.accordion2 .item{
+    border-top: 1px solid #444444;
+    overflow: hidden;
+    list-style: none;
+}
+.accordion2 .btn{
+    display: block;
+    padding: 15px 20px;
+    background-color: #333333;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    text-align: left;
+}
+.accordion2 .btn:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right:8px solid transparent;
+    border-top:10px solid #333333;
+    right: 15px;
+    bottom: -10px;
+    z-index: 9;
+}
+.accordion2 .btn i {
+    margin-right: 10px;
+}
+.accordion2 .subMenu{
+    background: #111111;
+    overflow: hidden;
+    -webkit-transition: max-height 0.7s;
+    -o-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+    max-height: 0;
+}
+.accordion2 .subMenu a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 14px;
+    border-bottom: 1px solid #444444;
+    position: relative;
+    text-decoration: none;
+}
+.accordion2 .subMenu a:before{
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+.accordion2 .subMenu a:before{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 6px;
+    left: 0;
+    top:0;
+    opacity: 1;
+    border-top: 24px solid transparent;
+    border-left: 11px solid #ffffff;
+    border-bottom: 24px solid transparent;
+}
+.accordion2 .subMenu a:after{
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+.accordion2 .subMenu a:after{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 6px;
+    right: 0px;
+    top:0;
+    opacity: 1;
+    border-top: 24px solid transparent;
+    border-right: 11px solid #ffffff;
+    border-bottom: 24px solid transparent;
+}
+.accordion2 .subMenu a:hover{ 
+    background: #273057;
+    background: -webkit-gradient(linear, left top, left bottom, from(#273057),color-stop(50%, #273057),color-stop(51%, #394c7f),to(#394c7f));
+    background: -o-linear-gradient(top, #273057 0%,#273057 50%,#394c7f 51%,#394c7f 100%);
+    background: linear-gradient(to bottom, #273057 0%,#273057 50%,#394c7f 51%,#394c7f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#273057', endColorstr='#394c7f',GradientType=0 );
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    border-bottom: 1px solid #394c7f;
+}
+.accordion2 .subMenu a:last-child{
+    border:none;
+}
+.accordion2 .item:target .subMenu{
+    max-height: 10em;
+}
+/* ##########################  Accordian2 css end ####################### */
+
+
+/* ##########################  Accordian3 css start ####################### */
+.accordion3 .accordion_tab_div input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.accordion3 .accordion_main_div {
+    border-radius: 8px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+.accordion3 .accordion_tab_div {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+.accordion3 .tab_label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1em;
+    background: #333333;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+.accordion3 .tab_label:hover {
+    background: #444444;
+}
+.accordion3 .tab_label::after {
+    content: "❯";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+}
+.accordion3 .tab_content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #2c3e50;
+    background: white;
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+}
+.accordion3 .accordion_tab_div input:checked + .tab_label {
+    background: #555555;
+}
+.accordion3 .accordion_tab_div input:checked + .tab_label::after {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+.accordion3 .accordion_tab_div input:checked ~ .tab_content {
+    max-height: 100vh;
+    padding: 1em;
+}
+
+/* ##########################  Accordian3 css end ####################### */
+
+
+/* ##########################  Accordian4 css start ####################### */
+.accordion4 .accordion_item {
+    background-color: #000000;
+    border-radius: 0.4rem;
+}
+.accordion4 .accordion_item hr {
+    border: 1px solid #333333;
+    margin: 0px;
+}
+.accordion4 .accordion_link {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background-color: #000000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+}
+.accordion4 .accordion_link h3 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.accordion4 .accordion_link i {
+    color: #e7d5ff;
+    padding: 0.5rem;
+}
+.accordion4 .accordion_link ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-left: 25px;
+}
+.accordion4 .accordion_link li {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.4);
+    padding: 0 0 1px 5px;
+}
+.accordion4 .accordion_link div {
+    display: flex;
+}
+.accordion4 .accordion_link .ion-md-arrow-down {
+    display: none;
+}
+.accordion4 .answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+    transition: max-height 650ms;
+}
+.accordion4 .answer p {
+    color: #fff;
+    font-size: 15px;
+    padding: 2rem;
+}
+.accordion4 .accordion_item:target .answer {
+    max-height: 20rem;
+}
+.accordion4 .accordion_item:target .accordion_link .ion-md-arrow-forward {
+    display: none;
+}
+.accordion4 .accordion_item:target .accordion_link .ion-md-arrow-down {
+    display: block;
+}
+/* ##########################  Accordian4 css end ####################### */
