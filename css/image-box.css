@@ -1,0 +1,249 @@
+/* ##########################  ImageBox1 css start ####################### */Imagebox1
+.Imagebox1 {
+  position: relative;
+  border-radius: 6px;
+  width: 400px;
+  padding: 15px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.Imagebox1::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  border-radius: 10px;
+  right: 0;
+  bottom: 50px;
+  top: 50px;
+  background-color: rgba(128, 128, 128, 0.37);
+  transform-origin: right 40%;
+  z-index: 0;
+  transition: 0.5s ease-in-out all;
+}
+.Imagebox1:hover::before {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: 0.5s ease-in-out all;
+}
+.Imagebox1 .top {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 300px;
+}
+.Imagebox1 .top .top_image {
+  height: 250px;
+  object-fit: cover;
+}
+.Imagebox1 .top .top_image img {
+  width: 100%;
+  border-radius: 6px;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.Imagebox1 .top .profile {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: left;
+  padding: 5px 0;
+  position: relative;
+}
+.Imagebox1 .top .profile .profile_pic {
+  display: block;
+  margin-right: 10px;
+}
+.Imagebox1 .top .profile .profile_pic img {
+  border-radius: 10px;
+  height: 40px;
+  object-fit: cover;
+  width: 40px;
+}
+.Imagebox1 .top .profile .profile_info {
+  display: block;
+  width: fit-content;
+}
+.Imagebox1 .top .profile .profile_info h3 {
+  font-size: 15px;
+  margin: 0;
+}
+.Imagebox1 .top .profile .profile_info p {
+  font-size: 12px;
+  margin: 0;
+}
+.Imagebox1 .bottom {
+  height: 40px;
+  padding: 5px 0;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.Imagebox1 .bottom .bottom_item:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.Imagebox1 .bottom .bottom_item:nth-child(2) {
+  transition-delay: 0.15s;
+}
+.Imagebox1 .bottom .bottom_item:nth-child(3) {
+  transition-delay: 0.2s;
+}
+.Imagebox1 .bottom .bottom_item {
+  transition: 0.3s ease-in-out all;
+  height: 25px;
+  padding: 5px;
+  color: white;
+  margin: 0 5px 0 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  align-items: center;
+  border-radius: 5px;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.Imagebox1 .bottom .bottom_item span:first-child {
+  margin-right: 5px;
+}
+.Imagebox1:hover .bottom_item {
+  transition: 0.3s ease-in-out all;
+  opacity: 1;
+  transform: translateY(0px);
+}
+/* ##########################  ImageBox1 css end ####################### */
+
+
+/* ##########################  ImageBox2 css start ####################### */
+.Imagebox2 {
+    margin: 15px 10px auto 15px;
+    text-align: center;
+    transition: all 0.5s;
+}
+.Imagebox2:hover .icon:before {
+    width: 140px;
+    height: 140px;
+}
+.Imagebox2 .img_in {
+    position: relative;
+    margin-top: -20px;
+    border-radius: 10px;
+}
+.Imagebox2 .img_in img {
+    width: 100%;
+    height: auto;
+    transition: all 0.5s;
+    border-radius: 10px;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+.Imagebox2:hover .img_in img {
+    
+    -webkit-filter: grayscale(70%);
+    filter: grayscale(70%);
+}
+.Imagebox2 .img-icon-box-content {
+  padding: 0 20px;
+}
+.Imagebox2 a.title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px auto 30px auto;
+    display: block;
+    position: relative;
+    color: #393939;
+}
+.Imagebox2 a.title:before {
+    transition: all 0.5s;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    z-index: 1;
+    height: 10px;
+    border-radius: 15px;
+    width: 0px;
+    margin: auto;
+    background-color: #f00022;
+    opacity: .7;
+    left: 0;
+    right: 0;
+}
+.Imagebox2:hover a.title:before {
+    width: 100px;
+  
+}
+.Imagebox2 .wasf {
+    font-size: 13px;
+    font-weight: 500;
+    color: #666363;
+    margin-bottom: 10px;
+}
+.Imagebox2 a.more {
+    color: #f00022;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+/* ##########################  ImageBox2 css end ####################### */
+
+
+/* ##########################  ImageBox3 css start ####################### */
+.Imagebox3 .ct_blog .inner {
+    background-color: #ebebeb;
+    padding: 10px;
+    transition: all 0.2s ease-in-out 0s;
+    cursor: pointer;
+    height: 100%;
+}
+.Imagebox3 .ct_blog .inner:hover {
+    background-color: #dadada;
+}
+.Imagebox3 .ct_blog .fauxcrop {
+    height: 180px;
+    overflow: hidden;
+}
+.Imagebox3 .ct_blog .fauxcrop img {
+    width: 100%;
+}
+.Imagebox3 .ct_blog_content {
+    display: table;
+    padding: 30px 0 28px;
+}
+.Imagebox3 .ct_blog_content .ct_blog_date {
+    border-right: 1px solid #95A5A6;
+    display: table-cell;
+    padding: 0px 18px 0px 15px;
+    text-align: center;
+}
+.Imagebox3 .ct_blog_content .ct_blog_date span {
+    font-size: 16px;
+    color: rgb(20, 117, 175);  
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+}
+.Imagebox3 .ct_blog_content .ct_blog_date strong {
+    font-size: 25px;
+    color: rgb(20, 117, 175);  
+}
+.Imagebox3 .ct_blog_content .ct_blog_header {
+    color: #333333;
+    display: table-cell;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    line-height: 1.1;
+    padding: 0 20px;
+    vertical-align: top;
+}
+/* ##########################  ImageBox3 css end ####################### */
+
+
+/* ##########################  ImageBox4 css start ####################### */
+
+/* ##########################  ImageBox4 css end ####################### */
