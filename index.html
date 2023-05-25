@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Admin Panel</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/global.css" />
-        <link rel="stylesheet" href="css/sidebar.css" />
-        <link rel="stylesheet" href="css/navbar-admin.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/header.css" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-        <!-- Fonts Icon -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+<head>
+    <title>Admin Panel</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/navbar-admin.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-        <!-- Fonts Family --->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <!-- Fonts Icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    </head>
+    <!-- Fonts Family --->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
 
-    <body>
-        <div class="panel-view-main-div">
-            <div class="left-side-section-div">
-                <div class="panel-sidebar-div">
-                    <div class="logo-div">
-                        <a href="#">
-                            <div class="logo-img">
-                                <img src="image/logo.png" alt="logo" />
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="bar-icon">
-                            <span class="material-symbols-outlined"> menu_open </span>
-                        </a>
-                        <span class="material-symbols-outlined togglebar"> close </span>
-                    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 
-                    <!-- <div class="sidebar-user-details-div">
+<body>
+    <div class="panel-view-main-div">
+        <div class="left-side-section-div">
+            <div class="panel-sidebar-div">
+                <div class="logo-div">
+                    <a href="#">
+                        <div class="logo-img">
+                            <img src="image/logo.png" alt="logo" />
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="bar-icon">
+                        <span class="material-symbols-outlined"> menu_open </span>
+                    </a>
+                    <span class="material-symbols-outlined togglebar"> close </span>
+                </div>
+
+                <!-- <div class="sidebar-user-details-div">
           <div class="user-img-div">
             <img src="image/user-big-img.png" alt="user-image" class="img-fluid">
           </div>
@@ -51,29 +57,35 @@
           <p class="user-desc-text">Project Manager</p>
         </div> -->
 
-                    <div class="sidemenu-div">
-                        <h3 class="sidebar_heading">Components</h3>
-                        <a href="index.html">
-                            <div class="menu-box-div bgactive">
-                                <p>Header</p>
-                            </div>
-                        </a>
-                        <a href="footer.html">
-                            <div class="menu-box-div">
-                                <p>Footer</p>
-                            </div>
-                        </a>
-                        <a href="accordion.html">
-                            <div class="menu-box-div">
-                                <p>Accordion</p>
-                            </div>
-                        </a>
-                        <a href="tabs.html">
-                            <div class="menu-box-div">
-                                <p>Tabs</p>
-                            </div>
-                        </a>
-                    </div>
+        <div class="sidemenu-div">
+            <h3 class="sidebar_heading"> Components </h3>
+            <a href="index.html">
+              <div class="menu-box-div bgactive">
+                <p>Header</p>
+              </div>
+            </a>
+            <a href="footer.html">
+              <div class="menu-box-div ">
+                <p>Footer</p>
+              </div>
+            </a>
+            <a href="accordion.html">
+              <div class="menu-box-div">
+                <p>Accordion</p>
+              </div>
+          </a>
+          <a href="tabs.html">
+            <div class="menu-box-div">
+                <p>Tabs</p>
+            </div>
+        </a>
+            </a>
+            <a href="iconbox.html">
+              <div class="menu-box-div">
+                <p>Iconbox</p>
+              </div>
+            </a>
+          </div>
                 </div>
             </div>
             <div class="right-side-section-div">
@@ -104,213 +116,241 @@
                     </div>
                 </div>
 
-                <!-- Right side Main contain section -->
-                <div class="right-contain-main-div">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="temp-bg-box p-4">
-                                <div style="background-color: #000000; padding-left: 10px; padding-right: 10px;">
-                                    <div class="header1">
-                                        <div class="custom_container">
-                                            <div class="header_main_div">
-                                                <div class="brand_logo">
-                                                    <a href="#" class="logo_link_text"><img src="image/main-logo.png" alt="Brand Logo" /></a>
-                                                </div>
-                                                <input type="checkbox" id="toggle_btn" />
-                                                <label for="toggle_btn" class="show_menu_btn"><i class="fas fa-bars"></i></label>
-                                                <nav>
-                                                    <div class="navigations">
-                                                        <ul class="header_left_side_menu">
-                                                            <li class="nav_items"><a href="#" class="link_text">Home</a></li>
-                                                            <li class="nav_items"><a href="#" class="link_text">Store</a></li>
-                                                            <li class="nav_items"><a href="#" class="link_text">Tools</a></li>
-                                                            <li class="nav_items"><a href="#" class="link_text">Pricing</a></li>
-                                                        </ul>
-                                                        <ul class="header_right_side_menu">
-                                                            <li class="nav_items"><a href="" class="link_text">About</a></li>
-                                                            <li class="nav_items"><a href="" class="link_text">FAQ</a></li>
-                                                            <li class="nav_items"><a href="" class="link_text">Contact</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </nav>
+            <!-- Right side Main contain section -->
+            <div class="right-contain-main-div">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="temp-bg-box p-4">
+                            <div style="background-color: #000000; padding-left: 10px; padding-right: 10px;">
+                                <div class="header1">
+                                    <div class="custom_container">
+                                        <div class="header_main_div">
+                                            <div class="brand_logo">
+                                                <a href="#" class="logo_link_text"><img src="image/main-logo.png"
+                                                        alt="Brand Logo" /></a>
                                             </div>
+                                            <input type="checkbox" id="toggle_btn" />
+                                            <label for="toggle_btn" class="show_menu_btn"><i
+                                                    class="fas fa-bars"></i></label>
+                                            <nav>
+                                                <div class="navigations">
+                                                    <ul class="header_left_side_menu">
+                                                        <li class="nav_items"><a href="#" class="link_text">Home</a>
+                                                        </li>
+                                                        <li class="nav_items"><a href="#" class="link_text">Store</a>
+                                                        </li>
+                                                        <li class="nav_items"><a href="#" class="link_text">Tools</a>
+                                                        </li>
+                                                        <li class="nav_items"><a href="#" class="link_text">Pricing</a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="header_right_side_menu">
+                                                        <li class="nav_items"><a href="" class="link_text">About</a>
+                                                        </li>
+                                                        <li class="nav_items"><a href="" class="link_text">FAQ</a></li>
+                                                        <li class="nav_items"><a href="" class="link_text">Contact</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </nav>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="temp-bg-box p-4">
-                                <div style="background-color: #000000; padding-left: 10px; padding-right: 10px;">
-                                  <div class="header2">
+                    </div>
+                    <div class="col-md-12">
+                        <div class="temp-bg-box p-4">
+                            <div style="background-color: #000000; padding-left: 10px; padding-right: 10px;">
+                                <div class="header2">
                                     <div class="custom_container">
                                         <div class="header_main_div">
                                             <div id="mobile_logo">
-                                                <a href="#" class="logo_link_text"><img src="image/main-logo.png" alt="Brand Logo" /></a>
+                                                <a href="#" class="logo_link_text"><img src="image/main-logo.png"
+                                                        alt="Brand Logo" /></a>
                                             </div>
                                             <input type="checkbox" id="menuToggle" />
-                                            <label for="menuToggle" class="menu_icon"><i class="fa-solid fa-bars"></i></label>
+                                            <label for="menuToggle" class="menu_icon"><i
+                                                    class="fa-solid fa-bars"></i></label>
                                             <div class="header_menu">
                                                 <div class="left_menu">
                                                     <ul class="links_main_div">
-                                                        <li class="nav_items"><a href="#" class="link_text">Home</a></li>
-                                                        <li class="nav_items"><a href="#" class="link_text">Store</a></li>
-                                                        <li class="nav_items"><a href="#" class="link_text">Tools</a></li>
-                                                        <li class="nav_items"><a href="#" class="link_text">Pricing</a></li>
+                                                        <li class="nav_items"><a href="#" class="link_text">Home</a>
+                                                        </li>
+                                                        <li class="nav_items"><a href="#" class="link_text">Store</a>
+                                                        </li>
+                                                        <li class="nav_items"><a href="#" class="link_text">Tools</a>
+                                                        </li>
+                                                        <li class="nav_items"><a href="#" class="link_text">Pricing</a>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                                 <div id="logo">
-                                                    <a href="#" class="logo_link_text"><img src="image/main-logo.png" alt="Brand Logo" /></a>
+                                                    <a href="#" class="logo_link_text"><img src="image/main-logo.png"
+                                                            alt="Brand Logo" /></a>
                                                 </div>
                                                 <div class="right_menu">
                                                     <ul class="links_main_div">
-                                                        <li class="nav_items"><a href="#" class="link_text">Home</a></li>
-                                                        <li class="nav_items"><a href="#" class="link_text">Store</a></li>
-                                                        <li class="nav_items"><a href="#" class="link_text">Tools</a></li>
-                                                        <li class="nav_items"><a href="#" class="link_text">Pricing</a></li>
+                                                        <li class="nav_items"><a href="#" class="link_text">Home</a>
+                                                        </li>
+                                                        <li class="nav_items"><a href="#" class="link_text">Store</a>
+                                                        </li>
+                                                        <li class="nav_items"><a href="#" class="link_text">Tools</a>
+                                                        </li>
+                                                        <li class="nav_items"><a href="#" class="link_text">Pricing</a>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                </div>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="temp-bg-box p-4">
-                                <div style="background-color: #000000; padding-left: 10px; padding-right: 10px;">
-                                  <div class="header3">
+                    </div>
+                    <div class="col-md-12">
+                        <div class="temp-bg-box p-4">
+                            <div style="background-color: #000000; padding-left: 10px; padding-right: 10px;">
+                                <div class="header3">
                                     <div class="custom_container">
-                                      <header class="header_main_div">
-                                        <div class="brand_logo">
-                                          <a href="#" class="logo_link_text"><img src="image/main-logo.png" alt="Brand Logo" /></a>
-                                        </div>
-                                        <div class="header_menu">
-                                          <input type="checkbox" id="menuToggle" />
-                                          <label for="menuToggle" class="menu_icon"><i class="fa-solid fa-bars"></i></label>
-                                          <ul class="links_main_div">
-                                            <li class="nav_items"><a href="#" class="link_text">Home</a></li>
-                                            <li class="nav_items"><a href="#" class="link_text">Store</a></li>
-                                            <li class="nav_items"><a href="#" class="link_text">Tools</a></li>
-                                            <li class="nav_items"><a href="#" class="link_text">Pricing</a></li>
-                                          </ul>
-                                        </div>
-                                      </header>
+                                        <header class="header_main_div">
+                                            <div class="brand_logo">
+                                                <a href="#" class="logo_link_text"><img src="image/main-logo.png"
+                                                        alt="Brand Logo" /></a>
+                                            </div>
+                                            <div class="header_menu">
+                                                <input type="checkbox" id="menuToggle" />
+                                                <label for="menuToggle" class="menu_icon"><i
+                                                        class="fa-solid fa-bars"></i></label>
+                                                <ul class="links_main_div">
+                                                    <li class="nav_items"><a href="#" class="link_text">Home</a></li>
+                                                    <li class="nav_items"><a href="#" class="link_text">Store</a></li>
+                                                    <li class="nav_items"><a href="#" class="link_text">Tools</a></li>
+                                                    <li class="nav_items"><a href="#" class="link_text">Pricing</a></li>
+                                                </ul>
+                                            </div>
+                                        </header>
                                     </div>
-                                  </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="temp-bg-box p-4">
-                                <div class="header4">
-                                 
-                                      <div class="main_header">
-                                          <div class="brand">
-                                              <img src="image/blacklogo.png" style="max-width: 55px;" />
-                                          </div>
-                                          <nav class="navigations">
-                                              <div class="common_radius cart_mob">
-                                                  <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-                                              </div>
-                                              <input type="checkbox" id="menuToggle" />
-                                              <label for="menuToggle" class="menu_icon"><i class="fa fa-bars" aria-hidden="true"></i></label>
-                                              <div class="menu">
-                                                  <ul>
-                                                      <li>
-                                                          <div class="dropdown">
-                                                              <button onclick="myFunction()" class="dropbtn">
-                                                                  Our Tests <span class="down_arrow"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-                                                              </button>
-                                                              <div id="myDropdown" class="dropdown_content">
-                                                                  <a href="#">Intracellular NAD™ Test</a>
-                                                                  <a href="#">AgingSOS™ Longevity Tests</a>
-                                                                  <a href="#">Biomarker Panel for COVID Long Haulers</a>
-                                                                  <a href="#">TruAge™</a>
-                                                              </div>
-                                                          </div>
-                                                      </li>
-                                                      <li><a href="#">About us</a></li>
-                                                      <li><a href="#">Blog</a></li>
-                                                      <li><a href="#">Contact</a></li>
-                                                      <li><a href="#">Help</a></li>
-                                                  </ul>
-                      
-                                                  <hr class="line" />
-                                                  <ul>
-                                                      <li><a href="#">Login</a></li>
-                                                      <li><a href="#" class="active">Register</a></li>
-                                                      <li><a href="#">Activate My Kit</a></li>
-                                                      <li class="cart_desk">
-                                                          <a href="#" class="common_radius"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-                                                      </li>
-                                                  </ul>
-                                              </div>
-                                          </nav>
-                                      </div>
-                                  
-                              </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="temp-bg-box p-4">
+                            <div class="header4">
+
+                                <div class="main_header">
+                                    <div class="brand">
+                                        <img src="image/blacklogo.png" style="max-width: 55px;" />
+                                    </div>
+                                    <nav class="navigations">
+                                        <div class="common_radius cart_mob">
+                                            <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                        </div>
+                                        <input type="checkbox" id="menuToggle" />
+                                        <label for="menuToggle" class="menu_icon"><i class="fa fa-bars"
+                                                aria-hidden="true"></i></label>
+                                        <div class="menu">
+                                            <ul>
+                                                <li>
+                                                    <div class="dropdown">
+                                                        <button onclick="myFunction()" class="dropbtn">
+                                                            Our Tests <span class="down_arrow"><i
+                                                                    class="fa fa-chevron-down"
+                                                                    aria-hidden="true"></i></span>
+                                                        </button>
+                                                        <div id="myDropdown" class="dropdown_content">
+                                                            <a href="#">Intracellular NAD™ Test</a>
+                                                            <a href="#">AgingSOS™ Longevity Tests</a>
+                                                            <a href="#">Biomarker Panel for COVID Long Haulers</a>
+                                                            <a href="#">TruAge™</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li><a href="#">About us</a></li>
+                                                <li><a href="#">Blog</a></li>
+                                                <li><a href="#">Contact</a></li>
+                                                <li><a href="#">Help</a></li>
+                                            </ul>
+
+                                            <hr class="line" />
+                                            <ul>
+                                                <li><a href="#">Login</a></li>
+                                                <li><a href="#" class="active">Register</a></li>
+                                                <li><a href="#">Activate My Kit</a></li>
+                                                <li class="cart_desk">
+                                                    <a href="#" class="common_radius"><i class="fa fa-shopping-cart"
+                                                            aria-hidden="true"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                </div>
+
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="temp-bg-box p-4">
-                                <div class="header5">
-                                  <div class="header_section_main_div">
-                                      <header>
-                                          <input type="checkbox" id="toggle_btn" />
-                                          <label for="toggle_btn" class="show_menu_btn"><i class="fas fa-bars"></i></label>
-                                          <div class="brand_logo">
-                                              <div class="brand_logo_sub_div">
-                                                  <a href="#" class="left_arrow_div">
-                                                      <img src="image/header-left-arrow.png" />
-                                                  </a>
-                                                  <a href="#" class="cast_btn_div mob_hide_div"> <img src="image/wave-network.png" /> Music </a>
-                                                  <a href="#" class="music_icon_div mob_show_class">
-                                                      <img src="image/musical-note.png" />
-                                                  </a>
-                                                  <div class="mob_view_shows_class">
-                                                      <a href="#" class="main_logo_div">
-                                                          <img src="image/battle-logo.png" />
-                                                      </a>
-                                                      <a href="#" class="cast_icon_divss">
-                                                          <img src="image/wave-network.png" />
-                                                      </a>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <nav>
-                                              <ul class="navigations">
-                                                  <li><a href="#" class="link_text">Home</a></li>
-                                                  <li class="battle_logo_div mob_hide_div">
-                                                      <a href="#" class="link_text">
-                                                          <img src="image/main-logo.png" />
-                                                      </a>
-                                                  </li>
-                                                  <li><a href="#" class="link_text">Playlist</a></li>
-                                                  <li><a href="#" class="link_text">Info</a></li>
-                                                  <li><a href="#" class="link_text mob_hide_div">Core Player</a></li>
-                                                  <div class="mob_show_class mixer_btn_mob_div">
-                                                      <a href="#" class="mixer_btn">Mixer</a>
-                                                  </div>
-                                                  <label for="toggle_btn" class="hide_menu_btn"><i class="fas fa-times"></i></label>
-                                              </ul>
-                                          </nav>
-                                          <div class="btn_div">
-                                              <a href="#" class="signin_text mob_hide_div">Sign In</a>
-                                              <a href="#" class="mixer_btn mob_hide_div">Contact</a>
-                                          </div>
-                                      </header>
-                                  </div>
-                              </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="temp-bg-box p-4">
+                            <div class="header5">
+                                <div class="header_section_main_div">
+                                    <header>
+                                        <input type="checkbox" id="toggle_btn" />
+                                        <label for="toggle_btn" class="show_menu_btn"><i
+                                                class="fas fa-bars"></i></label>
+                                        <div class="brand_logo">
+                                            <div class="brand_logo_sub_div">
+                                                <a href="#" class="left_arrow_div">
+                                                    <img src="image/header-left-arrow.png" />
+                                                </a>
+                                                <a href="#" class="cast_btn_div mob_hide_div"> <img
+                                                        src="image/wave-network.png" /> Music </a>
+                                                <a href="#" class="music_icon_div mob_show_class">
+                                                    <img src="image/musical-note.png" />
+                                                </a>
+                                                <div class="mob_view_shows_class">
+                                                    <a href="#" class="main_logo_div">
+                                                        <img src="image/battle-logo.png" />
+                                                    </a>
+                                                    <a href="#" class="cast_icon_divss">
+                                                        <img src="image/wave-network.png" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <nav>
+                                            <ul class="navigations">
+                                                <li><a href="#" class="link_text">Home</a></li>
+                                                <li class="battle_logo_div mob_hide_div">
+                                                    <a href="#" class="link_text">
+                                                        <img src="image/main-logo.png" />
+                                                    </a>
+                                                </li>
+                                                <li><a href="#" class="link_text">Playlist</a></li>
+                                                <li><a href="#" class="link_text">Info</a></li>
+                                                <li><a href="#" class="link_text mob_hide_div">Core Player</a></li>
+                                                <div class="mob_show_class mixer_btn_mob_div">
+                                                    <a href="#" class="mixer_btn">Mixer</a>
+                                                </div>
+                                                <label for="toggle_btn" class="hide_menu_btn"><i
+                                                        class="fas fa-times"></i></label>
+                                            </ul>
+                                        </nav>
+                                        <div class="btn_div">
+                                            <a href="#" class="signin_text mob_hide_div">Sign In</a>
+                                            <a href="#" class="mixer_btn mob_hide_div">Contact</a>
+                                        </div>
+                                    </header>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
                 <!-- Footer -->
                 <div class="footer-div">
-                    <p class="footer-text">copyright © 2023 inventam, All rights</p>
+                    <p class="footer-text">copyright © 2022 inventam, All rights</p>
                 </div>
             </div>
         </div>
@@ -339,23 +379,23 @@
 </script>
 
 <script>
-  /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-  function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-  }
+    /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
 
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function (event) {
-      if (!event.target.matches(".dropbtn")) {
-          var dropdowns = document.getElementsByClassName("dropdown_content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains("show")) {
-                  openDropdown.classList.remove("show");
-              }
-          }
-      }
-  };
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+            var dropdowns = document.getElementsByClassName("dropdown_content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains("show")) {
+                    openDropdown.classList.remove("show");
+                }
+            }
+        }
+    };
 </script>
