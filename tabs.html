@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Admin Panel</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/sidebar.css" />
+        <link rel="stylesheet" href="css/navbar-admin.css" />
+        <link rel="stylesheet" href="css/tabs.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+
+        <!-- Fonts Icon -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+        <!-- Fonts Family --->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body>
+        <div class="panel-view-main-div">
+            <div class="left-side-section-div">
+                <div class="panel-sidebar-div">
+                    <div class="logo-div">
+                        <a href="#">
+                            <div class="logo-img">
+                                <img src="image/logo.png" alt="logo" />
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="bar-icon">
+                            <span class="material-symbols-outlined"> menu_open </span>
+                        </a>
+                        <span class="material-symbols-outlined togglebar"> close </span>
+                    </div>
+
+                    <!-- <div class="sidebar-user-details-div">
+          <div class="user-img-div">
+            <img src="image/user-big-img.png" alt="user-image" class="img-fluid">
+          </div>
+          <h5 class="user-name-text">Robert Grant</h5>
+          <p class="user-desc-text">Project Manager</p>
+        </div> -->
+
+        <div class="sidemenu-div">
+            <h3 class="sidebar_heading"> Components </h3>
+            <a href="index.html">
+              <div class="menu-box-div">
+                <p>Header</p>
+              </div>
+            </a>
+            <a href="footer.html">
+              <div class="menu-box-div">
+                <p>Footer</p>
+              </div>
+            </a>
+            <a href="accordion.html">
+              <div class="menu-box-div ">
+                <p>Accordion</p>
+              </div>
+          </a>
+          <a href="tabs.html">
+            <div class="menu-box-div bgactive">
+                <p>Tabs</p>
+            </div>
+        </a>
+            </a>
+            <a href="iconbox.html">
+              <div class="menu-box-div">
+                <p>Iconbox</p>
+              </div>
+            </a>
+          </div>
+                </div>
+            </div>
+            <div class="right-side-section-div">
+                <!-- Header Section -->
+                <div class="header-section-main-div">
+                    <div class="header-main-div">
+                        <div class="toggle-menu-icon">
+                            <span class="material-symbols-outlined"> menu </span>
+                        </div>
+                        <div class="mob-header-div">
+                            <div class="brand-logo">
+                                <div class="header-left-search-div">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search....." id="mail" name="email" />
+                                        <span class="material-symbols-outlined search-icon">
+                                            search
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <input type="checkbox" id="toggle-btn" /> -->
+                            <label for="toggle-btn" class="show-menu-btn mob-bar-btn">
+                                <span class="material-symbols-outlined toggle-icon">
+                                    menu
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right side Main contain section -->
+                <div class="right-contain-main-div">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="temp-bg-box p-4">
+                                <div style="padding-left: 10px; padding-right: 10px;">
+                                    <div class="tabs1">
+                                        <div class="custom_container">
+                                            <div class="custom_tabs_main_div">
+                                                <div class="tab_box_div">
+                                                    <input type="radio" name="css-tabs" id="tab-1" checked class="tab_switch" />
+                                                    <label for="tab-1" class="tab_label">Tab One</label>
+                                                    <div class="tab_content">
+                                                        My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my
+                                                        studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I
+                                                        continued four years.
+                                                    </div>
+                                                </div>
+                                                <div class="tab_box_div">
+                                                    <input type="radio" name="css-tabs" id="tab-2" class="tab_switch" />
+                                                    <label for="tab-2" class="tab_label">Tab Two</label>
+                                                    <div class="tab_content">
+                                                        My father now and then sending me small sums of money, I laid them out in learning navigation, and other parts of the mathematics, useful to those who intend to travel, as I always believed it would be, some time
+                                                        or other, my fortune to do.
+                                                    </div>
+                                                </div>
+                                                <div class="tab_box_div">
+                                                    <input type="radio" name="css-tabs" id="tab-3" class="tab_switch" />
+                                                    <label for="tab-3" class="tab_label">Tab Three</label>
+                                                    <div class="tab_content">
+                                                        When I left Mr. Bates, I went down to my father: where, by the assistance of him and my uncle John, and some other relations, I got forty pounds, and a promise of thirty pounds a year to maintain me at Leyden:
+                                                        there I studied physic two years and seven months, knowing it would be useful in long voyages.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="temp-bg-box p-4">
+                                <div style="padding-left: 10px; padding-right: 10px;">
+                                    <div class="tabs2">
+                                        <div class="custom_container">
+                                            <div class="custom_tabs2_main_div">
+                                                <input type="radio" id="tab1" name="tab-control" checked />
+                                                <input type="radio" id="tab2" name="tab-control" />
+                                                <input type="radio" id="tab3" name="tab-control" />
+                                                <input type="radio" id="tab4" name="tab-control" />
+                                                <ul>
+                                                    <li title="Features">
+                                                        <label for="tab1" role="button">
+                                                            <svg viewBox="0 0 24 24">
+                                                                <path
+                                                                    d="M14,2A8,8 0 0,0 6,10A8,8 0 0,0 14,18A8,8 0 0,0 22,10H20C20,13.32 17.32,16 14,16A6,6 0 0,1 8,10A6,6 0 0,1 14,4C14.43,4 14.86,4.05 15.27,4.14L16.88,2.54C15.96,2.18 15,2 14,2M20.59,3.58L14,10.17L11.62,7.79L10.21,9.21L14,13L22,5M4.93,5.82C3.08,7.34 2,9.61 2,12A8,8 0 0,0 10,20C10.64,20 11.27,19.92 11.88,19.77C10.12,19.38 8.5,18.5 7.17,17.29C5.22,16.25 4,14.21 4,12C4,11.7 4.03,11.41 4.07,11.11C4.03,10.74 4,10.37 4,10C4,8.56 4.32,7.13 4.93,5.82Z"
+                                                                />
+                                                            </svg>
+                                                            <br />
+                                                            <span>Features</span>
+                                                        </label>
+                                                    </li>
+                                                    <li title="Delivery Contents">
+                                                        <label for="tab2" role="button">
+                                                            <svg viewBox="0 0 24 24">
+                                                                <path
+                                                                    d="M2,10.96C1.5,10.68 1.35,10.07 1.63,9.59L3.13,7C3.24,6.8 3.41,6.66 3.6,6.58L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.66,6.72 20.82,6.88 20.91,7.08L22.36,9.6C22.64,10.08 22.47,10.69 22,10.96L21,11.54V16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V10.96C2.7,11.13 2.32,11.14 2,10.96M12,4.15V4.15L12,10.85V10.85L17.96,7.5L12,4.15M5,15.91L11,19.29V12.58L5,9.21V15.91M19,15.91V12.69L14,15.59C13.67,15.77 13.3,15.76 13,15.6V19.29L19,15.91M13.85,13.36L20.13,9.73L19.55,8.72L13.27,12.35L13.85,13.36Z"
+                                                                />
+                                                            </svg>
+                                                            <br />
+                                                            <span>Delivery Contents</span>
+                                                        </label>
+                                                    </li>
+                                                    <li title="Shipping">
+                                                        <label for="tab3" role="button">
+                                                            <svg viewBox="0 0 24 24">
+                                                                <path
+                                                                    d="M3,4A2,2 0 0,0 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8H17V4M10,6L14,10L10,14V11H4V9H10M17,9.5H19.5L21.47,12H17M6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5M18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5Z"
+                                                                />
+                                                            </svg>
+                                                            <br />
+                                                            <span>Shipping</span>
+                                                        </label>
+                                                    </li>
+                                                    <li title="Returns">
+                                                        <label for="tab4" role="button">
+                                                            <svg viewBox="0 0 24 24">
+                                                                <path
+                                                                    d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+                                                                />
+                                                            </svg>
+                                                            <br />
+                                                            <span>Returns</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                            
+                                                <div class="tab_slider"><div class="tab_indicator"></div></div>
+                                                <div class="tab_content">
+                                                    <section>
+                                                        <h2>Features</h2>
+                                                        1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolorem sequi, quo tempore in eum obcaecati atque quibusdam officiis est dolorum minima deleniti ratione molestias numquam. Voluptas voluptates
+                                                        quibusdam cum?
+                                                    </section>
+                                                    <section>
+                                                        <h2>Delivery Contents</h2>
+                                                        2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quas adipisci a accusantium eius ut voluptatibus ad impedit nulla, ipsa qui. Quasi temporibus eos commodi aliquid impedit amet, similique nulla.
+                                                    </section>
+                                                    <section>
+                                                        <h2>Shipping</h2>
+                                                        3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nemo ducimus eius, magnam error quisquam sunt voluptate labore, excepturi numquam! Alias libero optio sed harum debitis! Veniam, quia in eum.
+                                                    </section>
+                                                    <section>
+                                                        <h2>Returns</h2>
+                                                        4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt
+                                                        necessitatibus eaque quidem incidunt.
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="temp-bg-box p-4" style="background: #bdcbe5;min-height: 400px;">
+                                <div style="padding-left: 10px; padding-right: 10px;">
+                                    <div class="tabs3">
+                                        <div class="custom_container">
+                                            <div class="pcss3t pcss3t_effect_scale pcss3t_theme_1">
+                                                <input type="radio" name="pcss3t" checked id="tabs1" class="tab_content_first" />
+                                                <label for="tabs1">Tesla</label>
+                            
+                                                <input type="radio" name="pcss3t" id="tabs2" class="tab_content_2" />
+                                                <label for="tabs2">da Vinci</label>
+                            
+                                                <input type="radio" name="pcss3t" id="tabs3" class="tab_content_3" />
+                                                <label for="tabs3">Einstein</label>
+                            
+                                                <input type="radio" name="pcss3t" id="tabs5" class="tab_content_last" />
+                                                <label for="tabs5">Newton</label>
+                                                <ul>
+                                                    <li class="tab_content tab_content_first typography">
+                                                        <h1>Nikola Tesla</h1>
+                                                        <p>
+                                                            Serbian-American inventor, electrical engineer, mechanical engineer, physicist, and futurist best known for his contributions to the design of the modern alternating current (AC) electrical supply system.
+                                                        </p>
+                                                        <p>
+                                                            Tesla started working in the telephony and electrical fields before emigrating to the United States in 1884 to work for Thomas Edison. He soon struck out on his own with financial backers, setting up
+                                                            laboratories/companies to develop a range of electrical devices. His patented AC induction motor and transformer were licensed by George Westinghouse, who also hired Tesla as a consultant to help develop an
+                                                            alternating current system. Tesla is also known for his high-voltage, high-frequency power experiments in New York and Colorado Springs which included patented devices and theoretical work used in the
+                                                            invention of radio communication, for his X-ray experiments, and for his ill-fated attempt at intercontinental wireless transmission in his unfinished Wardenclyffe Tower project.
+                                                        </p>
+                                                    </li>
+                                                    <li class="tab_content tab_content_2 typography">
+                                                        <h1>Leonardo da Vinci</h1>
+                                                        <p>
+                                                            Italian Renaissance polymath: painter, sculptor, architect, musician, mathematician, engineer, inventor, anatomist, geologist, cartographer, botanist, and writer. His genius, perhaps more than that of any
+                                                            other figure, epitomized the Renaissance humanist ideal. Leonardo has often been described as the archetype of the Renaissance Man, a man of "unquenchable curiosity" and "feverishly inventive imagination". He
+                                                            is widely considered to be one of the greatest painters of all time and perhaps the most diversely talented person ever to have lived. According to art historian Helen Gardner, the scope and depth of his
+                                                            interests were without precedent and "his mind and personality seem to us superhuman, the man himself mysterious and remote". Marco Rosci states that while there is much speculation about Leonardo, his vision
+                                                            of the world is essentially logical rather than mysterious, and that the empirical methods he employed were unusual for his time.
+                                                        </p>
+                                                    </li>
+                                                    <li class="tab_content tab_content_3 typography">
+                                                        <h1>Albert Einstein</h1>
+                                                        <p>
+                                                            German-born theoretical physicist who developed the general theory of relativity, one of the two pillars of modern physics (alongside quantum mechanics). While best known for his mass–energy equivalence
+                                                            formula E = mc2 (which has been dubbed "the world's most famous equation"), he received the 1921 Nobel Prize in Physics "for his services to theoretical physics, and especially for his discovery of the law of
+                                                            the photoelectric effect". The latter was pivotal in establishing quantum theory.
+                                                        </p>
+                                                        <p>
+                                                            Near the beginning of his career, Einstein thought that Newtonian mechanics was no longer enough to reconcile the laws of classical mechanics with the laws of the electromagnetic field. This led to the
+                                                            development of his special theory of relativity. He realized, however, that the principle of relativity could also be extended to gravitational fields, and with his subsequent theory of gravitation in 1916,
+                                                            he published a paper on the general theory of relativity.
+                                                        </p>
+                                                    </li>
+                                                    <li class="tab_content tab_content_last typography">
+                                                        <div class="typography">
+                                                            <h1>Isaac Newton</h1>
+                                                            <p>
+                                                                English physicist and mathematician who is widely regarded as one of the most influential scientists of all time and as a key figure in the scientific revolution. His book Philosophiæ Naturalis Principia
+                                                                Mathematica ("Mathematical Principles of Natural Philosophy"), first published in 1687, laid the foundations for most of classical mechanics. Newton also made seminal contributions to optics and shares
+                                                                credit with Gottfried Leibniz for the invention of the infinitesimal calculus.
+                                                            </p>
+                                                            <p>
+                                                                Newton's Principia formulated the laws of motion and universal gravitation that dominated scientists' view of the physical universe for the next three centuries. It also demonstrated that the motion of
+                                                                objects on the Earth and that of celestial bodies could be described by the same principles. By deriving Kepler's laws of planetary motion from his mathematical description of gravity, Newton removed the
+                                                                last doubts about the validity of the heliocentric model of the cosmos.
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="temp-bg-box p-4">
+                                <div class="tabs4">
+                                    <div class="custom_container">
+                                        <div class="tabs_main_div">
+                                          <input class="radio" id="one" name="group" type="radio" checked>
+                                          <input class="radio" id="two" name="group" type="radio">
+                                          <input class="radio" id="three" name="group" type="radio">
+                                        
+                                          <div class="tabs">
+                                            <label class="tab_btn" id="one-tab" for="one">Tab1</label>
+                                            <label class="tab_btn" id="two-tab" for="two">Tab2</label>
+                                            <label class="tab_btn" id="three-tab" for="three">Tab3</label>
+                                          </div>
+                                        
+                                          <div class="panels">
+                                            <div class="panel" id="one-panel">
+                                              <div class="panel_title">Title1</div>
+                                              <p>Content1</p>
+                                            </div>
+                                            <div class="panel" id="two-panel">
+                                              <div class="panel_title">Title2</div>
+                                              <p>Content2</p>
+                                            </div>
+                                            <div class="panel" id="three-panel">
+                                              <div class="panel_title">Title3</div>
+                                              <p>Content3</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="footer-div">
+                    <p class="footer-text">copyright © 2023 inventam, All rights</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    $(document).ready(function () {
+        $(".mob-bar-btn").click(function () {
+            $(".left-side-section-div").toggle();
+        });
+        $(".togglebar").click(function () {
+            $(".left-side-section-div").hide();
+        });
+    });
+
+    $(".bar-icon").click(function () {
+        $(".left-side-section-div").css("margin-left", "-300px");
+        $(".panel-view-main-div").addClass("full-width-panel");
+    });
+
+    $(".toggle-menu-icon").click(function () {
+        $(".left-side-section-div").css("margin-left", "0px");
+        $(".panel-view-main-div").removeClass("full-width-panel");
+    });
+</script>
+
+<script>
+  /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function (event) {
+      if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown_content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains("show")) {
+                  openDropdown.classList.remove("show");
+              }
+          }
+      }
+  };
+</script>
