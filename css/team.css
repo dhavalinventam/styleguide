@@ -1,0 +1,199 @@
+/* Team-1 Css Start  */
+.team1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.team1 .team_experts:hover img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.team1 .team_experts:hover .team_content {
+  border-color: #e782a0 !important;
+}
+.team1 .teamImg {
+  overflow: hidden;
+  position: relative;
+}
+.team1 .teamImg img {
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+.team1 .teamImg:hover .social_icons {
+  opacity: 1;
+  left: 0;
+}
+.team1 .social_icons {
+  position: absolute;
+  list-style: none;
+  top: 0;
+  left: -40px;
+  right: auto;
+  text-align: center;
+  padding: 14px;
+  margin-top: 0;
+  opacity: 0;
+  z-index: 9;
+  background-color: #e784a2;
+  -webkit-transition: .5s all ease;
+  -ms-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  -o-transition: .5s all ease;
+  transition: .5s all ease;
+}
+.team1 .social_icons li {
+  margin: 10px 0;
+  display: block;
+}
+.team1 .social_icons a {
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+}
+.team1 .team_content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin: -25px 20px 5px;
+  padding: 18px 0 22px;
+  background-color: #fff;
+  border-bottom: 5px solid transparent;
+  box-shadow: 0 0 12px 0 rgba(32, 46, 60, .06);
+  -webkit-transition: .5s cubic-bezier(.3, .57, .55, 1);
+  transition: .5s cubic-bezier(.3, .57, .55, 1);
+}
+.team1 .team_content h5 {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.team1 .team_content p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #9dabaf;
+  margin: 0;
+}
+@media only screen and (max-width: 991px) {
+  .team1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .team1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+/* Team-1 Css End  */
+
+
+/* Team-2 Css Start  */
+.teamWrapper {
+    margin-top: 80px;
+}
+.Team2 .avatar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -80px;
+    text-align: center;
+}
+.Team2 .teamcolinner {
+    position: relative;
+}
+.Team2 .avatar > img {
+    width: 150px;
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid rgb(170 170 173/ 1);
+    box-shadow: 0px 3px 10px 3px rgb(170 170 173 / 0.5);
+}
+.Team2 .teamcolinner {
+    position: relative;
+    border: 1px dashed #ddd;
+    min-height: 100px;
+    background: #fff;
+    z-index: 9;
+}
+.Team2 .teamcol {
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 1s ease-in-out;
+}
+.Team2 .teamcol:hover {
+    transform: translateY(-30px);
+    box-shadow: 0px 3px 10px 3px rgb(170 170 173 / 0.5);
+    transition: transform 1s ease-in-out;
+}
+.Team2 .teamcol:before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: -webkit-linear-gradient(#ffbf00, #ffa000);
+    border-top-right-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+.Team2 .teamcol:after {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: -webkit-linear-gradient(#0052cc, #005fec);
+    border-bottom-left-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+.Team2 .teamcol:hover::before, .Team2 .teamcol:hover::after {
+    width: 100%;
+    transition: width 1s ease-in-out;
+}
+.Team2 .member_name {
+    margin-top: 80px;
+}
+.Team2 .member_info {
+    padding: 10px 20px;
+}
+.Team2 .member_name h2, .Team2 .member_info p, .Team2 .member_mail p {
+  text-align: center;
+}
+.Team2 .social_listing {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.Team2 .social_listing >li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: #f4f5f7;
+    border-radius: 50%;
+    margin: 5px;
+}
+.Team2 .member_social {
+  margin-bottom: 20px;
+}
+/* Team-2 Css End  */
