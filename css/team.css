@@ -1,0 +1,335 @@
+/* Team-1 Css Start  */
+.team1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
+}
+.team1 .team_experts:hover img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.team1 .team_experts:hover .team_content {
+  border-color: #e782a0 !important;
+}
+.team1 .teamImg {
+  overflow: hidden;
+  position: relative;
+}
+.team1 .teamImg img {
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+.team1 .teamImg:hover .social_icons {
+  opacity: 1;
+  left: 0;
+}
+.team1 .social_icons {
+  position: absolute;
+  list-style: none;
+  top: 0;
+  left: -40px;
+  right: auto;
+  text-align: center;
+  padding: 14px;
+  margin-top: 0;
+  opacity: 0;
+  z-index: 9;
+  background-color: #e784a2;
+  -webkit-transition: .5s all ease;
+  -o-transition: .5s all ease;
+  transition: .5s all ease;
+}
+.team1 .social_icons li {
+  margin: 10px 0;
+  display: block;
+}
+.team1 .social_icons a {
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+}
+.team1 .team_content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin: -25px 20px 5px;
+  padding: 18px 0 22px;
+  background-color: #fff;
+  border-bottom: 5px solid transparent;
+  -webkit-box-shadow: 0 0 12px 0 rgba(32, 46, 60, .06);
+          box-shadow: 0 0 12px 0 rgba(32, 46, 60, .06);
+  -webkit-transition: .5s cubic-bezier(.3, .57, .55, 1);
+  -o-transition: .5s cubic-bezier(.3, .57, .55, 1);
+  transition: .5s cubic-bezier(.3, .57, .55, 1);
+}
+.team1 .team_content h5 {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.team1 .team_content p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #9dabaf;
+  margin: 0;
+}
+@media only screen and (max-width: 991px) {
+  .team1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .team1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+/* Team-1 Css End  */
+
+
+/* Team-2 Css Start  */
+.teamWrapper {
+    margin-top: 80px;
+}
+.Team2 .avatar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -80px;
+    text-align: center;
+}
+.Team2 .teamcolinner {
+    position: relative;
+}
+.Team2 .avatar > img {
+    width: 150px;
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid rgb(170 170 173/ 1);
+    -webkit-box-shadow: 0px 3px 10px 3px rgb(170 170 173 / 0.5);
+            box-shadow: 0px 3px 10px 3px rgb(170 170 173 / 0.5);
+}
+.Team2 .teamcolinner {
+    position: relative;
+    border: 1px dashed #ddd;
+    min-height: 100px;
+    background: #fff;
+    z-index: 9;
+}
+.Team2 .teamcol {
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    -o-transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+.Team2 .teamcol:hover {
+    -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+            transform: translateY(-30px);
+    -webkit-box-shadow: 0px 3px 10px 3px rgb(170 170 173 / 0.5);
+            box-shadow: 0px 3px 10px 3px rgb(170 170 173 / 0.5);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    -o-transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+.Team2 .teamcol:before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: -webkit-linear-gradient(#ffbf00, #ffa000);
+    border-top-right-radius: 10px;
+    -webkit-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+.Team2 .teamcol:after {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: -webkit-linear-gradient(#0052cc, #005fec);
+    border-bottom-left-radius: 10px;
+    -webkit-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+.Team2 .teamcol:hover::before, .Team2 .teamcol:hover::after {
+    width: 100%;
+    -webkit-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+.Team2 .member_name {
+    margin-top: 80px;
+}
+.Team2 .member_info {
+    padding: 10px 20px;
+}
+.Team2 .member_name h2, .Team2 .member_info p, .Team2 .member_mail p {
+  text-align: center;
+}
+.Team2 .social_listing {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.Team2 .social_listing >li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: #f4f5f7;
+    border-radius: 50%;
+    margin: 5px;
+}
+.Team2 .member_social {
+  margin-bottom: 20px;
+}
+/* Team-2 Css End  */
+
+
+/* Team-3 Css Start  */
+
+
+.Team3 .image_flip:hover .backside,
+.Team3 .image_flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.Team3 .image_flip:hover .frontside,
+.Team3 .image_flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.Team3 .mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transition: 1s;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.Team3 .frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+}
+
+.Team3 .backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.Team3 .frontside,
+.Team3 .backside {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.Team3 .frontside .card,
+.Team3 .backside .card {
+    min-height: 312px;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 0px !important;
+    padding: 30px;
+}
+
+.Team3 .backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.Team3 .frontside .card .card_title,
+.Team3 .backside .card .card_title {
+    color: #007b5e !important;
+}
+
+.Team3 .card_body {
+  text-align: center;
+}
+
+.Team3 .frontside .card .card_body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+/* Team-3 Css End  */
